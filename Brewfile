@@ -25,6 +25,7 @@ brew "databricks/tap/databricks"
 brew "helm"
 brew "cmatrix"
 brew "powerlevel10k"
+brew "zsh-autocomplete"
 
 # Visual Code
 vscode "GitHub.copilot"
