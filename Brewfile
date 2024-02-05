@@ -1,6 +1,10 @@
+# Taps
+tap "homebrew/bundle"
+tap "databricks/tap"
+
+
 # Core
 brew "bash"
-tap "homebrew/bundle"
 brew "pyenv"
 brew "terraform"
 brew "neovim"
@@ -17,10 +21,10 @@ brew "cmake"
 brew "aws-sdk-cpp"
 brew "fzf"
 brew "alaminopu/kctl/kctl"
-tap "databricks/tap"
 brew "databricks/tap/databricks"
 brew "helm"
 brew "cmatrix"
+brew "powerlevel10k"
 
 # Visual Code
 vscode "GitHub.copilot"
