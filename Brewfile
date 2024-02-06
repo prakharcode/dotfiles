@@ -7,6 +7,7 @@ cask "iterm2"
 cask "google-chrome"
 cask "visual-studio-code"
 cask "spotify"
+cask "whatsapp"
 
 # Core
 brew "bash"
