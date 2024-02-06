@@ -9,8 +9,6 @@ else
     brew update
 fi
 
-# update path
-export PATH='/usr/local/bin:$PATH'
 
 #==============
 # Remove old dot flies
@@ -36,8 +34,8 @@ ln -sf $PWD/.bashrc ~/.bashrc
 ln -sf $PWD/.bash_profile ~/.bash_profile
 ln -sf $PWD/.profile ~/.profile
 ln -sf $PWD/.zshrc ~/.zshrc
-ln -sf $PWD/nvim ~/.config/nvim
-ln -sf $PWD/tumx ~/.config/tmux
+ln -s $PWD/nvim ~/.config/nvim
+ln -sf $PWD/tumx/tmux.conf ~/.config/tmux/tmux.conf
 ln -sf ~/homebrew/Brewfile ~/Brewfile
 
 
@@ -46,9 +44,8 @@ brew bundle
 cd -
 
 # get tmux plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-~/.tmux/plugins/tpm/bin/update_plugins all
-
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+~/.config/tmux/plugins/tpm/bin/update_plugins all
 
 #==============
 # Set zsh as the default shell
