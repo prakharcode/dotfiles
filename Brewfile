@@ -2,6 +2,11 @@
 tap "homebrew/bundle"
 tap "databricks/tap"
 
+# Cask
+cask "iterm2"
+cask "google-chrome"
+cask "visual-studio-code"
+cask "spotify"
 
 # Core
 brew "bash"
