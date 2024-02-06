@@ -41,6 +41,7 @@ ln -Fs $PWD/.bashrc ~/.bashrc
 ln -Fs $PWD/.bash_profile ~/.bash_profile
 ln -Fs $PWD/.profile ~/.profile
 ln -Fs $PWD/.zshrc ~/.zshrc
+ln -Fs $PWD/.p10k.zsh ~/.p10k.zsh
 ln -s  $PWD/nvim ~/.config/nvim
 ln -s  $PWD/tumx/tmux.conf ~/.config/tmux/tmux.conf
 ln -s  $PWD/Brewfile ~/Brewfile
