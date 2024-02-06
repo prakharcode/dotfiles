@@ -1,2 +1,9 @@
+# Hidden dots to ignore
+.DS_Store
+.vscode
+Thumbs.db
+.idea
+
+# for the dotfile repo
 nvim/plugin/packer_compiled.lua
 

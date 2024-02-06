@@ -24,6 +24,7 @@ rm -rf ~/.gitconfig > /dev/null 2>&1
 rm -rf ~/.psqlrc > /dev/null 2>&1
 rm -rf ~/.tigrc > /dev/null 2>&1
 rm -rf ~/.config > /dev/null 2>&1
+rm -rf ~/.gitignore > /dev/null 2>&1
 rm -rf ~/Brewfile > /dev/null 2>&1
 
 #==============
@@ -42,6 +43,7 @@ ln -Fs $PWD/.bash_profile   $HOME/.bash_profile
 ln -Fs $PWD/.profile        $HOME/.profile
 ln -Fs $PWD/.zshrc          $HOME/.zshrc
 ln -Fs $PWD/.p10k.zsh       $HOME/.p10k.zsh
+ln -Fs $PWD/.gitignore      $HOME/.gitignore
 ln -s  $PWD/nvim            $HOME/.config/nvim
 ln -s  $PWD/tmux/tmux.conf  $HOME/.config/tmux/
 ln -s  $PWD/Brewfile        $HOME/Brewfile
@@ -59,7 +61,17 @@ rm      $HOME/.config/tmux/plugins/tmux-powerline/themes/default.sh
 ln -s   $PWD/tmux/tmux-powerline/themes/prakhar.sh $HOME/.config/tmux/plugins/tmux-powerline/themes/default.sh
 ln -Fs  $PWD/tmuxinator $HOME/.config/tmuxinator 
 
+# set git to ignorefile globally
+git config --global core.excludesfile ~/.gitignore
+
+
 #==============
 # Set zsh as the default shell
 #==============
-chsh -s /bin/zsh
+if [ "$SHELL" != "/bin/zsh" ]; then
+    chsh -s $(which zsh)
+    echo "Zsh has been installed and set as the default shell."
+else
+    echo "Zsh is already the default shell."
+fi
+
