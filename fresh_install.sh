@@ -30,14 +30,19 @@ rm -rf ~/Brewfile > /dev/null 2>&1
 # SYMLINK
 #==============
 
-ln -sf $PWD/.bashrc ~/.bashrc
-ln -sf $PWD/.bash_profile ~/.bash_profile
-ln -sf $PWD/.profile ~/.profile
-ln -sf $PWD/.zshrc ~/.zshrc
-ln -s $PWD/nvim ~/.config/nvim
-ln -sf $PWD/tumx/tmux.conf ~/.config/tmux/tmux.conf
-ln -sf ~/homebrew/Brewfile ~/Brewfile
+# Make a XDG_HOME_CONFIG directory, '.config'
 
+# Making a directory for tmux and config at the same time
+mkdir -p ~/.config/tmux
+
+
+ln -Fs $PWD/.bashrc ~/.bashrc
+ln -Fs $PWD/.bash_profile ~/.bash_profile
+ln -Fs $PWD/.profile ~/.profile
+ln -Fs $PWD/.zshrc ~/.zshrc
+ln -s  $PWD/nvim ~/.config/nvim
+ln -s $PWD/tumx/tmux.conf ~/.config/tmux/tmux.conf
+ln -s $PWD/Brewfile ~/Brewfile
 
 cd ~
 brew bundle
