@@ -54,6 +54,11 @@ cd -
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ~/.config/tmux/plugins/tpm/bin/install_plugins
 
+# remove powerline default theme and link my theme
+rm      $HOME/.config/tmux/plugins/tmux-powerline/themes/default.sh
+ln -s   $PWD/tmux/tmux-powerline/themes/prakhar.sh $HOME/.config/tmux/plugins/tmux-powerline/themes/default.sh
+ln -Fs  $PWD/tmuxinator $HOME/.config/tmuxinator 
+
 #==============
 # Set zsh as the default shell
 #==============
