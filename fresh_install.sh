@@ -36,13 +36,14 @@ rm -rf ~/Brewfile > /dev/null 2>&1
 mkdir -p ~/.config/tmux
 
 
+ln -Fs $PWD/.gitconfig ~/.gitconfig
 ln -Fs $PWD/.bashrc ~/.bashrc
 ln -Fs $PWD/.bash_profile ~/.bash_profile
 ln -Fs $PWD/.profile ~/.profile
 ln -Fs $PWD/.zshrc ~/.zshrc
 ln -s  $PWD/nvim ~/.config/nvim
-ln -s $PWD/tumx/tmux.conf ~/.config/tmux/tmux.conf
-ln -s $PWD/Brewfile ~/Brewfile
+ln -s  $PWD/tumx/tmux.conf ~/.config/tmux/tmux.conf
+ln -s  $PWD/Brewfile ~/Brewfile
 
 cd ~
 brew bundle
