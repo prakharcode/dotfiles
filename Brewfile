@@ -10,6 +10,8 @@ cask "spotify"
 cask "whatsapp"
 cask "slack"
 cask "obsidian"
+cask "hammerspoon"
+
 
 # Core
 brew "bash"

@@ -45,6 +45,7 @@ ln -Fs $PWD/.zshrc          $HOME/.zshrc
 ln -Fs $PWD/.p10k.zsh       $HOME/.p10k.zsh
 ln -Fs $PWD/.gitignore      $HOME/.gitignore
 ln -s  $PWD/nvim            $HOME/.config/nvim
+ln -s  $PWD/hammerspoon     $HOME/.config/hammerspoon
 ln -s  $PWD/tmux/tmux.conf  $HOME/.config/tmux/
 ln -s  $PWD/Brewfile        $HOME/Brewfile
 
@@ -64,6 +65,9 @@ ln -Fs  $PWD/tmuxinator $HOME/.config/tmuxinator
 # set git to ignorefile globally
 git config --global core.excludesfile ~/.gitignore
 
+# set hammerspoon config directory and open it
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+open -a hammerspoon.app
 
 #==============
 # Set zsh as the default shell
