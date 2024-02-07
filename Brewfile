@@ -29,6 +29,7 @@ brew "cmake"
 
 # Development
 brew "aws-sdk-cpp"
+brew "ripgrep"
 brew "fzf"
 brew "alaminopu/kctl/kctl"
 brew "databricks/tap/databricks"

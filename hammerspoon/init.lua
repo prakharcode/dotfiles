@@ -26,4 +26,5 @@ spoon.AppLauncher:bindHotkeys({
     f = "Finder",
     o = "Obsidia",
     m = "Spotify",
+    s = "Slack",
   })
