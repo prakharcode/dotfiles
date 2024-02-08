@@ -16,3 +16,7 @@ alias gitd='git diff'
 alias doco='docker-compose'
 alias docou='docker-compose up -d'
 alias docod='docker-compose down'
+
+
+# fzf directory
+alias f=fcd

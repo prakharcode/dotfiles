@@ -57,6 +57,11 @@ cd -
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ~/.config/tmux/plugins/tpm/bin/install_plugins
 
+
+# Get zsh plugins
+git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
+
+
 # remove powerline default theme and link my theme
 rm      $HOME/.config/tmux/plugins/tmux-powerline/themes/default.sh
 ln -s   $PWD/tmux/tmux-powerline/themes/prakhar.sh $HOME/.config/tmux/plugins/tmux-powerline/themes/default.sh
@@ -78,4 +83,5 @@ if [ "$SHELL" != "/bin/zsh" ]; then
 else
     echo "Zsh is already the default shell."
 fi
+
 
