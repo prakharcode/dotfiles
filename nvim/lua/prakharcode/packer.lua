@@ -82,5 +82,6 @@ use {
 }
 
 use { 'tpope/vim-obsession' }
+use { 'lukas-reineke/indent-blankline.nvim' }
 end)
 
