@@ -20,3 +20,4 @@ alias docod='docker-compose down'
 
 # fzf directory
 alias f=fcd
+alias vfz='vim "$(fd | fzf)"'
