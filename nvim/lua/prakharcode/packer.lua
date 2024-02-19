@@ -87,5 +87,6 @@ use {
     'kkoomen/vim-doge',
     run = ':call doge#install()'
 }
+use { "FabijanZulj/blame.nvim" }
 end)
 
