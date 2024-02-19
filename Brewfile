@@ -1,6 +1,7 @@
 # Taps
 tap "homebrew/bundle"
 tap "databricks/tap"
+tap "homebrew/cask-fonts"
 
 # Cask
 cask "iterm2"
@@ -38,6 +39,8 @@ brew "helm"
 brew "cmatrix"
 brew "powerlevel10k"
 brew "zsh-autocomplete"
+brew "font-fira-code"
+
 
 # Visual Code
 vscode "GitHub.copilot"
