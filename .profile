@@ -11,6 +11,7 @@ alias guf='git ls-files . --exclude-standard --others'
 alias gituf='git ls-files . --exclude-standard --others'
 alias gitl='git log'
 alias gitd='git diff'
+alias gplom='git pull origin master'
 
 # Docker alias
 alias doco='docker-compose'
