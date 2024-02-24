@@ -40,6 +40,7 @@ brew "cmatrix"
 brew "powerlevel10k"
 brew "zsh-autocomplete"
 brew "font-fira-code"
+brew "node" # for some language-servers
 
 
 # Visual Code
