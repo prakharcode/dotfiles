@@ -88,5 +88,6 @@ use {
     run = ':call doge#install()'
 }
 use { "FabijanZulj/blame.nvim" }
+use {"ellisonleao/carbon-now.nvim", config = function() require('carbon-now').setup() end}
 end)
 
