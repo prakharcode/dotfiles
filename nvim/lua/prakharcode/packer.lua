@@ -87,7 +87,7 @@ use {
     'kkoomen/vim-doge',
     run = ':call doge#install()'
 }
-use { "FabijanZulj/blame.nvim" }
-use {"ellisonleao/carbon-now.nvim", config = function() require('carbon-now').setup() end}
+use { "lewis6991/gitsigns.nvim", config = function() require('gitsigns').setup() end }
+use { "ellisonleao/carbon-now.nvim", config = function() require('carbon-now').setup() end }
 end)
 
