@@ -140,3 +140,4 @@ bindkey "^[[B" history-beginning-search-forward
 
 # source profile for alias
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+eval "$(zoxide init zsh)"

@@ -41,6 +41,9 @@ brew "powerlevel10k"
 brew "zsh-autocomplete"
 brew "font-fira-code"
 brew "node" # for some language-servers
+brew "zoxide"
+brew "git-flow"
+brew "amethyst"
 
 
 # Visual Code
