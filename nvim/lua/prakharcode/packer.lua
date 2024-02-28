@@ -89,5 +89,6 @@ use {
 }
 use { "lewis6991/gitsigns.nvim", config = function() require('gitsigns').setup() end }
 use { "ellisonleao/carbon-now.nvim", config = function() require('carbon-now').setup() end }
+use { "dnlhc/glance.nvim", config = function () require('glance').setup() end}
 end)
 
