@@ -15,8 +15,8 @@ vim.keymap.set("n", "<leader>wd", function() vim.cmd.wincmd("l") end) -- right
 vim.keymap.set("n", "<leader>ws", function() vim.cmd.wincmd("j") end) -- bottom
 
 -- Begin and end of line
-vim.keymap.set("n", "h", "^") -- beginning of line
-vim.keymap.set("n", "l" ,"$") -- end of line
+vim.keymap.set("n", "H", "^") -- beginning of line
+vim.keymap.set("n", "L" ,"$") -- end of line
 
 -- no highlight after finding
 vim.keymap.set("n", "ho" , function() vim.cmd("noh") end) -- end of line
