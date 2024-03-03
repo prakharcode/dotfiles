@@ -22,7 +22,8 @@ vim.keymap.set("n", "L" ,"$") -- end of line
 vim.keymap.set("n", "ho" , function() vim.cmd("noh") end) -- end of line
 
 -- diagnostic remaps
-vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+

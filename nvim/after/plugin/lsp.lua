@@ -3,10 +3,29 @@ local lsp_zero = require('lsp-zero')
 -- setup completion
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
-local cmp_mappings = lsp_zero.defaults.cmp_mappings({
-  ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-  ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-  ['<C-y>'] = cmp.mapping.confirm({ select = true })
+local cmp_action = require('lsp-zero').cmp_action()
+
+cmp.setup({
+    sources={
+        {name= 'nvim_lsp'},
+        {name= 'buffer'}
+    },
+    preselect = 'item',
+    completion = {
+        completeopt = 'menu,menuone,noinsert'
+    },
+    mapping = {
+        ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<Up>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
+        ['<Down>'] = cmp.mapping.select_next_item({behavior = 'select'}),
+        ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-d>'] = cmp.mapping.scroll_docs(4),
+        ['<Tab>'] = cmp_action.luasnip_supertab(),
+        ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
+    }
 })
 
 
