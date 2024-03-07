@@ -18,7 +18,15 @@ alias doco='docker-compose'
 alias docou='docker-compose up -d'
 alias docod='docker-compose down'
 
+# lazygit
+alias lg=lazygit
 
 # fzf directory
 alias f=fcd
 alias vfz='vim "$(fd | fzf)"'
+
+function mr() {
+    glab mr view $(glab mr list | awk '{print $1}'| sed 's/!//' | fzf --preview='glab mr view {} | bat')
+}
+
+alias mr=mr
