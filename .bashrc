@@ -21,3 +21,4 @@ function fcd {
         --exclude ".quokka" \
         --exclude ".vscode-insiders" ) -prune -false -type d -print | fzf)
     }
+. "$HOME/.cargo/env"

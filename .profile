@@ -23,10 +23,11 @@ alias lg=lazygit
 
 # fzf directory
 alias f=fcd
-alias vfz='vim "$(fd | fzf)"'
+alias vfz='fd --hidden | fzf | xargs nvim'
 
 function mr() {
     glab mr view $(glab mr list | awk '{print $1}'| sed 's/!//' | fzf --preview='glab mr view {} | bat')
 }
 
 alias mr=mr
+source "$HOME/.cargo/env"
