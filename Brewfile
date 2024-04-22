@@ -12,6 +12,7 @@ cask "whatsapp"
 cask "slack"
 cask "obsidian"
 cask "hammerspoon"
+cask "copyq"
 
 
 # Core
