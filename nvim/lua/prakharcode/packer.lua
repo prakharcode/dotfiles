@@ -113,5 +113,6 @@ use {
         "rcarriga/nvim-notify",
     }
 }
+use { "catppuccin/nvim", as = "catppuccin" }
 end)
 
