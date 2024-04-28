@@ -113,6 +113,14 @@ use {
         "rcarriga/nvim-notify",
     }
 }
+-- nvim v0.7.2
+use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
+})
 use { "catppuccin/nvim", as = "catppuccin" }
 end)
 
