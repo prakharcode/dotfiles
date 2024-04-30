@@ -2,7 +2,12 @@
 vim.g.mapleader=","
 
 -- Expose Netrw directory
-vim.keymap.set("n", "<leader>dl", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>dl", function()
+            if (vim.api.nvim_buf_get_option(0, "filetype")=="netrw")
+                then vim.api.nvim_exec("close", false)
+                else vim.api.nvim_exec(":Vexplore", false)
+                end
+            end, {})
 
 -- Splitting Panes in vim
 vim.keymap.set("n", "<leader>\\", vim.cmd.vsplit)
