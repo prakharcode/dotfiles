@@ -34,3 +34,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
 -- LazyGit
 vim.keymap.set('n', '<leader>gg', ":LazyGit<CR>")
+
+-- File Browser
+-- open file_browser with the path of the current buffer
+vim.keymap.set("n", "<leader>fb", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
