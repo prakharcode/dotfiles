@@ -1,6 +1,20 @@
+# Bash helpers
+
+function make_and_enter(){
+    mkdir "$1" && cd "$1" 
+}
+
+
+function findandkill() {  
+    port=$(lsof -n -i4TCP:$1 | grep LISTEN | awk '{ print $2 }')
+    kill -9 $port 
+}
+
 alias vim=nvim
 alias txs='f(){ tmuxinator start "$@";  unset -f f; }; f'
 alias la='ls -a'
+alias mkd=make_and_enter
+alias killport=findandkill
 
 # Git aliases
 alias gpm='git push origin master'

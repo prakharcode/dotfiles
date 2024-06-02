@@ -28,6 +28,7 @@ brew "tmuxinator"
 brew "tree"
 brew "virtualenv"
 brew "cmake"
+brew "pyenv-virtualenv"
 
 # Development
 brew "aws-sdk-cpp"
@@ -45,6 +46,7 @@ brew "node" # for some language-servers
 brew "zoxide"
 brew "git-flow"
 brew "amethyst"
+brew "pipx"
 
 
 # Visual Code

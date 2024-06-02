@@ -150,3 +150,7 @@ export FZF_COMMON_OPTIONS="
 # source profile for alias
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 eval "$(zoxide init zsh)"
+eval "$(pyenv virtualenv-init -)"
+
+# Created by `pipx` on 2024-06-02 23:09:38
+export PATH="$PATH:/Users/prakhar.srivastava/.local/bin"

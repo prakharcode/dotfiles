@@ -51,7 +51,7 @@ ln -s  $PWD/Brewfile        $HOME/Brewfile
 
 cd ~
 brew bundle
-cd -
+cd ~
 
 # get tmux plugins
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
@@ -84,4 +84,10 @@ else
     echo "Zsh is already the default shell."
 fi
 
+
+#==============
+# Configure Pipx 
+#==============
+pipx ensurepath
+sudo pipx ensurepath --global
 
