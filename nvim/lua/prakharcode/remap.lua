@@ -1,13 +1,13 @@
 -- leader remap
 vim.g.mapleader=","
 
--- Expose Netrw directory
-vim.keymap.set("n", "<leader>dl", function()
-            if (vim.api.nvim_buf_get_option(0, "filetype")=="netrw")
-                then vim.api.nvim_exec("close", false)
-                else vim.api.nvim_exec(":Vexplore", false)
-                end
-            end, {})
+-- Expose Yazi
+vim.keymap.set("n", "<leader>dl", function() require("yazi").yazi() end, {})
+
+-- sane browsing
+vim.keymap.set("n", "<S-g>", "<S-g>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Splitting Panes in vim
 vim.keymap.set("n", "<leader>\\", vim.cmd.vsplit)
@@ -29,6 +29,8 @@ vim.keymap.set("n", "<S-TAB>", "<cmd>tabp<CR>", {})
 -- Begin and end of line
 vim.keymap.set("n", "H", "^") -- beginning of line
 vim.keymap.set("n", "L" ,"$") -- end of line
+vim.keymap.set("v", "H", "^") -- beginning of line
+vim.keymap.set("v", "L" , "$") -- end of line
 
 -- no highlight after finding
 vim.keymap.set("n", "ho" , function() vim.cmd("noh") end) -- end of line
@@ -45,3 +47,7 @@ vim.keymap.set('n', '<leader>gg', ":LazyGit<CR>")
 -- File Browser
 -- open file_browser with the path of the current buffer
 vim.keymap.set("n", "<leader>fb", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+
+-- ToggleTerm
+vim.keymap.set("n", "<leader>tt", ":ToggleTerm direction=float<CR>")
+vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")

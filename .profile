@@ -39,6 +39,9 @@ alias lg=lazygit
 alias f=fcd
 alias vfz='fd --hidden | fzf | xargs nvim'
 
+# harlequin
+alias harledbx='harlequin -a databricks --server-hostname dbc-e238ff8f-6325.cloud.databricks.com  --http-path /sql/1.0/warehouses/4dec255e799e6c72 --auth-type databricks-oauth'
+
 function mr() {
     glab mr view $(glab mr list | awk '{print $1}'| sed 's/!//' | fzf --preview='glab mr view {} | bat')
 }
