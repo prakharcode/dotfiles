@@ -19,6 +19,13 @@ vim.keymap.set("n", "<leader>wa", function() vim.cmd.wincmd("h") end) -- left
 vim.keymap.set("n", "<leader>wd", function() vim.cmd.wincmd("l") end) -- right
 vim.keymap.set("n", "<leader>ws", function() vim.cmd.wincmd("j") end) -- bottom
 
+-- Tabs
+-- Creating
+vim.keymap.set("n", "gt", "<cmd>tab split | lua vim.lsp.buf.definition()<CR>", {})
+-- Navigation
+vim.keymap.set("n", "<TAB>", "<cmd>tabn<CR>", {})
+vim.keymap.set("n", "<S-TAB>", "<cmd>tabp<CR>", {})
+
 -- Begin and end of line
 vim.keymap.set("n", "H", "^") -- beginning of line
 vim.keymap.set("n", "L" ,"$") -- end of line

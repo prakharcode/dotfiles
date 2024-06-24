@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf-zsh-plugin)
+plugins=(git fzf-zsh-plugin jq)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -146,6 +146,7 @@ export FZF_COMMON_OPTIONS="
   --preview-window 'right:60%:visible:wrap'
   --preview '([[ -d {} ]] && tree -C {}) || ([[ -f {} ]] && bat --style=full --color=always {}) || echo {}'"
 
+bindkey "^j" jq-complete
 
 # source profile for alias
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
@@ -154,3 +155,7 @@ eval "$(pyenv virtualenv-init -)"
 
 # Created by `pipx` on 2024-06-02 23:09:38
 export PATH="$PATH:/Users/prakhar.srivastava/.local/bin"
+
+# START: Added by Updated Airflow Breeze autocomplete setup
+source /Users/prakhar.srivastava/personal/airflow/dev/breeze/autocomplete/breeze-complete-zsh.sh
+# END: Added by Updated Airflow Breeze autocomplete setup

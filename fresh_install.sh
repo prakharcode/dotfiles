@@ -60,6 +60,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 # Get zsh plugins
 git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
+git clone https://github.com/reegnz/jq-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/jq
 
 
 # remove powerline default theme and link my theme

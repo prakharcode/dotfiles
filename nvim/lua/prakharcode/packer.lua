@@ -123,5 +123,6 @@ return require("packer").startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "stevearc/oil.nvim", config = function () require("oil").setup() end }
     use { "nvim-telescope/telescope-file-browser.nvim", requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }}
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function() require("toggleterm").setup() end}
 end)
 
