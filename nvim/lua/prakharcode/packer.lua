@@ -50,7 +50,7 @@ return require("packer").startup(function(use)
     use {
         "nvim-telescope/telescope.nvim", tag = "0.1.5",
         -- or                            , branch = '0.1.x',
-        requires = { {"nvim-lua/plenary.nvim"} }
+        requires = { { "nvim-lua/plenary.nvim" } }
     }
     use { "rose-pine/neovim", as = "rose-pine", config = function()
         vim.cmd("colorscheme rose-pine")
@@ -59,7 +59,7 @@ return require("packer").startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate"
     }
-    use {"nvim-treesitter/nvim-treesitter-context"}
+    use { "nvim-treesitter/nvim-treesitter-context" }
     use { "ThePrimeagen/harpoon" }
     use { "mbbill/undotree" }
 
@@ -68,21 +68,21 @@ return require("packer").startup(function(use)
         branch = "v3.x",
         requires = {
             --- Uncomment the two plugins below if you want to manage the language servers from neovim
-            {"williamboman/mason.nvim"},
-            {"williamboman/mason-lspconfig.nvim"},
+            { "williamboman/mason.nvim" },
+            { "williamboman/mason-lspconfig.nvim" },
 
             -- LSP Support
-            {"neovim/nvim-lspconfig"},
+            { "neovim/nvim-lspconfig" },
             -- Autocompletion
-            {"hrsh7th/nvim-cmp"},
-            {"hrsh7th/cmp-nvim-lsp"},
-            {"L3MON4D3/LuaSnip"},
-            {"hrsh7th/cmp-buffer"},
+            { "hrsh7th/nvim-cmp" },
+            { "hrsh7th/cmp-nvim-lsp" },
+            { "L3MON4D3/LuaSnip" },
+            { "hrsh7th/cmp-buffer" },
         }
     }
 
     use { "tpope/vim-obsession" }
-    use { "tpope/vim-fugitive"  }
+    use { "tpope/vim-fugitive" }
     use { "lukas-reineke/indent-blankline.nvim" }
     use {
         "kkoomen/vim-doge",
@@ -90,16 +90,16 @@ return require("packer").startup(function(use)
     }
     use { "lewis6991/gitsigns.nvim", config = function() require("gitsigns").setup() end }
     use { "ellisonleao/carbon-now.nvim", config = function() require("carbon-now").setup() end }
-    use { "dnlhc/glance.nvim", config = function () require("glance").setup() end}
+    use { "dnlhc/glance.nvim", config = function() require("glance").setup() end }
     use {
         "nvim-lualine/lualine.nvim",
         requires = { "nvim-tree/nvim-web-devicons", opt = true },
-        config = function ()
+        config = function()
             require("lualine").setup()
         end
     }
     use { "nvim-tree/nvim-web-devicons" }
-    use { "folke/Trouble.nvim", requires={{"nvim-tree/nvim-web-devicons"}} }
+    use { "folke/Trouble.nvim", requires = { { "nvim-tree/nvim-web-devicons" } } }
     use { "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" }
     use {
         "folke/noice.nvim",
@@ -121,7 +121,7 @@ return require("packer").startup(function(use)
         },
     })
     use { "catppuccin/nvim", as = "catppuccin" }
-    use {"akinsho/toggleterm.nvim", tag = '*'}
-    use {"mikavilpas/yazi.nvim", dependencies = {"nvim-lua/plenary.nvim"}, config = function() require("yazi").setup() end }
+    use { "akinsho/toggleterm.nvim", tag = '*' }
+    use { "mikavilpas/yazi.nvim", dependencies = { "nvim-lua/plenary.nvim" }, config = function() require("yazi").setup() end }
+    use { "stevearc/conform.nvim" }
 end)
-

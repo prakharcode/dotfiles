@@ -47,6 +47,8 @@ brew "zoxide"
 brew "git-flow"
 brew "amethyst"
 brew "pipx"
+brew "jq"
+brew "yazi"
 
 
 # Visual Code
@@ -71,6 +73,5 @@ vscode "waderyan.gitblame"
 
 # Office
 brew "docker-credential-helper-ecr"
-brew "jq"
 brew "saml2aws"
 

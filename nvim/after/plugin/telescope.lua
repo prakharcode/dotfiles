@@ -18,9 +18,8 @@ local telescope = require("telescope")
 telescope.setup {
   defaults = {
     mappings = {
-      i = { ["<c-t>"] = trouble.open_with_trouble },
-      n = { ["<c-t>"] = trouble.open_with_trouble },
+      i = { ["<C-t>"] = trouble.open },
+      n = { ["<C-t>"] = trouble.open },
     },
   },
 }
-telescope.load_extension "file_browser"
