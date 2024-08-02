@@ -154,7 +154,7 @@ eval "$(zoxide init zsh)"
 eval "$(pyenv virtualenv-init -)"
 
 # Created by `pipx` on 2024-06-02 23:09:38
-export PATH="$PATH:/Users/prakhar.srivastava/.local/bin"
+export PATH="$PATH:/Users/prakhar.srivastava/.local/bin:$HOME/go/bin"
 
 # START: Added by Updated Airflow Breeze autocomplete setup
 source /Users/prakhar.srivastava/personal/airflow/dev/breeze/autocomplete/breeze-complete-zsh.sh

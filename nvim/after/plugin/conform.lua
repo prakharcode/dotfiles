@@ -4,5 +4,7 @@ require("conform").setup({
         python = { "isort", "black" },
         javascript = { { "prettierd", "prettier" } },
         go = { "gofumpt" },
+        json = { "jq" },
+        yaml = { "yq" }
     },
 })
