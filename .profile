@@ -1,6 +1,6 @@
 # Bash helpers
 
-function make_and_enter(){
+function mkcdir(){
     mkdir "$1" && cd "$1" 
 }
 

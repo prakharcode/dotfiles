@@ -12,7 +12,7 @@ root: ~/tiqets
 # Project hooks
 
 # Runs on project start, always
-on_project_start: source tiqets/bin/activate
+on_project_start: pyenv activate data-pipeline
 
 # Run on project start, the first time
 # on_project_first_start: command

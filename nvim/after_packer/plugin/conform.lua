@@ -5,6 +5,6 @@ require("conform").setup({
         javascript = { { "prettierd", "prettier" } },
         go = { "gofumpt" },
         json = { "jq" },
-        yaml = { "yq" }
+        -- yaml = { "yq" }
     },
 })

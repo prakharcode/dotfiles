@@ -1,5 +1,5 @@
-require("prakharcode.remap")
-require("prakharcode.packer")
+require("prakharcode.packer_plugin_manager.remap")
+require("prakharcode.packer_plugin_manager.packer")
 
 
 vim.api.nvim_create_autocmd("BufWritePre", {
