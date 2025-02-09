@@ -56,7 +56,3 @@ vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>")
 -- File Browser
 -- open file_browser with the path of the current buffer
 vim.keymap.set("n", "<leader>fb", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
-
--- ToggleTerm
-vim.keymap.set("n", "<leader>tt", ":ToggleTerm direction=float<CR>")
-vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")

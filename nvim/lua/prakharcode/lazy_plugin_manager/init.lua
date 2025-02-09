@@ -37,5 +37,3 @@ require("lazy").setup({
 	-- automatically check for plugin updates
 	checker = { enabled = true },
 })
-
-require("prakharcode.lazy_plugin_manager.colors")
