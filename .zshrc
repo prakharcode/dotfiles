@@ -109,10 +109,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 
 # AWS autocomplete
 autoload bashcompinit && bashcompinit
@@ -151,7 +147,6 @@ bindkey "^j" jq-complete
 # source profile for alias
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 eval "$(zoxide init zsh)"
-eval "$(pyenv virtualenv-init -)"
 
 # Created by `pipx` on 2024-06-02 23:09:38
 export PATH="$PATH:/Users/prakhar.srivastava/.local/bin:$HOME/go/bin"
@@ -159,3 +154,8 @@ export PATH="$PATH:/Users/prakhar.srivastava/.local/bin:$HOME/go/bin"
 # START: Added by Updated Airflow Breeze autocomplete setup
 source /Users/prakhar.srivastava/personal/airflow/dev/breeze/autocomplete/breeze-complete-zsh.sh
 # END: Added by Updated Airflow Breeze autocomplete setup
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

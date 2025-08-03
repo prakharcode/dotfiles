@@ -7,3 +7,6 @@ Thumbs.db
 # for the dotfile repo
 nvim/plugin/packer_compiled.lua
 
+# node modules
+node_modules/
+
