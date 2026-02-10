@@ -77,31 +77,31 @@ return {
 		},
 	},
 	-- formating files
-	{
-		"stevearc/conform.nvim",
-		optional = true,
-		opts = {
-			formatters_by_ft = {
-				python = { "black", "isort" },
-			},
-		},
-	},
+	--{
+	--	"stevearc/conform.nvim",
+	--	optional = true,
+	--	opts = {
+	--		formatters_by_ft = {
+	--			python = { "black", "isort" },
+	--		},
+	--	},
+	--},
 	-- debugging
-	{
-		"mfussenegger/nvim-dap",
-		dependencies = {
-			"mfussenegger/nvim-dap-python",
-            -- stylua: ignore
-            keys = {
-                { "<leader>dPt", function() require('dap-python').test_method() end, desc = "Debug Method" },
-                { "<leader>dPc", function() require('dap-python').test_class() end,  desc = "Debug Class" },
-            },
-			config = function()
-				local path = require("mason-registry").get_package("debugpy"):get_install_path()
-				require("dap-python").setup(path .. "/venv/bin/python")
-			end,
-		},
-	},
+	-- {
+	-- 	"mfussenegger/nvim-dap",
+	-- 	dependencies = {
+	-- 		"mfussenegger/nvim-dap-python",
+        --     -- stylua: ignore
+        --     keys = {
+        --         { "<leader>dPt", function() require('dap-python').test_method() end, desc = "Debug Method" },
+        --         { "<leader>dPc", function() require('dap-python').test_class() end,  desc = "Debug Class" },
+        --     },
+	-- 		config = function()
+	-- 			local path = require("mason-registry").get_package("debugpy"):get_install_path()
+	-- 			require("dap-python").setup(path .. "/venv/bin/python")
+	-- 		end,
+	-- 	},
+	-- },
 	-- For selecting virtual envs
 	{
 		"linux-cultist/venv-selector.nvim",

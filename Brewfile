@@ -13,6 +13,7 @@ cask "slack"
 cask "obsidian"
 cask "hammerspoon"
 cask "copyq"
+cask "claude-code"
 
 
 # Core

@@ -23,6 +23,9 @@ vim.g.mapleader = ","
 -- remap file
 require("prakharcode.lazy_plugin_manager.remap")
 
+-- add custom commands
+require("prakharcode.lazy_plugin_manager.custom_commands")
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
