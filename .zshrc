@@ -152,10 +152,17 @@ eval "$(zoxide init zsh)"
 export PATH="$PATH:/Users/prakhar.srivastava/.local/bin:$HOME/go/bin"
 
 # START: Added by Updated Airflow Breeze autocomplete setup
-source /Users/prakhar.srivastava/personal/airflow/dev/breeze/autocomplete/breeze-complete-zsh.sh
+# source /Users/prakhar.srivastava/personal/airflow/dev/breeze/autocomplete/breeze-complete-zsh.sh
 # END: Added by Updated Airflow Breeze autocomplete setup
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/prakhar.srivastava/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/prakhar.srivastava/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/prakhar.srivastava/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/prakhar.srivastava/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

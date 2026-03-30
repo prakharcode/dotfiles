@@ -14,7 +14,8 @@ cask "obsidian"
 cask "hammerspoon"
 cask "copyq"
 cask "claude-code"
-
+cask "amethyst"
+cask "font-fira-code"
 
 # Core
 brew "bash"
@@ -36,21 +37,21 @@ brew "aws-sdk-cpp"
 brew "ripgrep"
 brew "fzf"
 brew "fd"
-brew "alaminopu/kctl/kctl"
+brew "kubernetes-cli"
 brew "databricks/tap/databricks"
 brew "helm"
 brew "cmatrix"
 brew "powerlevel10k"
 brew "zsh-autocomplete"
-brew "font-fira-code"
 brew "node" # for some language-servers
 brew "zoxide"
 brew "git-flow"
-brew "amethyst"
-brew "pipx"
 brew "jq"
 brew "yazi"
-
+brew "kubectx"
+brew "openjdk@17"
+brew "awscli"
+brew "kdash-rs/kdash/kdash"
 
 # Visual Code
 vscode "GitHub.copilot"

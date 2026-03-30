@@ -1,0 +1,7 @@
+1. Fix pre installation git setup
+2. Config for amethyst 
+3. fira code
+4. tmux setup
+5. fix zsh setup
+6. powerline setup
+7. fix rust setup

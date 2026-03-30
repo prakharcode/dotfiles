@@ -1,6 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	tag = "v0.1.9",
+	branch = "master",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	keys = {
 		{ "gd", function() require("telescope.builtin").lsp_definitions({ reuse_win = true }) end, desc = "Goto Definition" },

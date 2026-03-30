@@ -50,4 +50,4 @@ function mr() {
 }
 
 alias mr=mr
-source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
