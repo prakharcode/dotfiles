@@ -51,3 +51,5 @@ function mr() {
 
 alias mr=mr
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"

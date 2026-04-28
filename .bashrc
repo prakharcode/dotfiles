@@ -22,3 +22,5 @@ function fcd {
         --exclude ".vscode-insiders" ) -prune -false -type d -print | fzf)
     }
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
